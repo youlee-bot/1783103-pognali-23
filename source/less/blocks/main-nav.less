@@ -1,0 +1,162 @@
+.main-nav {
+  @media (max-width: @max-mobile) {
+    width: 100%;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.main-nav--white {
+  @media (max-width: @max-mobile) {
+    background-color: #ffffff;
+
+    svg > path {
+      fill:#192144;
+    }
+
+    .main-nav__toggle {
+      &::after,&::before {
+        background-color: #192144;
+      }
+    }
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.main-nav__list {
+  .offbulit;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: @max-mobile) {
+    background-color: #ffffff;
+    .font (30px;35px;normal);
+    margin-top: 45px;
+    align-items: center;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.main-nav__list--closed {
+  @media (max-width: @max-mobile) {
+    display: none;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.main-nav__item-list {
+  .offbulit
+}
+
+.main-nav__toggle {
+  @media (max-width: @max-mobile) {
+    width: 25px;
+    height: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::before,&::after {
+      content: "";
+      width: 25px;
+      height: 3px;
+      background-color: #ffffff;
+      border-radius: 1.5px;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+
+}
+
+.main-nav__toggle--nojs {
+  display: none;
+}
+
+.main-nav__header {
+  @media (max-width: @max-mobile) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+    width: @mobile-wrapper;
+    margin: 19px auto;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.main-icons__button {
+  @media (max-width: @max-mobile) {
+    display: block;
+    margin: 51px 0;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.main-nav__item-list {
+  @media (max-width: @max-mobile) {
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}

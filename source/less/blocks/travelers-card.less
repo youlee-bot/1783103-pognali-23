@@ -1,0 +1,268 @@
+.travelers-card {
+  @media (max-width: @max-mobile) {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__img-wrapper {
+  @media (max-width: @max-mobile) {
+    min-height: 255px;
+    width: 100%;
+    position: relative;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__img {
+  @media (max-width: @max-mobile) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__flags {
+  @media (max-width: @max-mobile) {
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: 145px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers_card__level {
+  @media (max-width: @max-mobile) {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-areas: "level" "label";
+
+    svg {
+      position: absolute;
+    }
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers_card__level-numbers {
+  @media (max-width: @max-mobile) {
+    grid-area: level;
+    .font (24px;24px;bold;#ffffff);
+    margin: 10px 0 0 16px;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers_card__level-label {
+  @media (max-width: @max-mobile) {
+    grid-area: label;
+    .font (14px;14px;bold;#ffffff);
+    margin: 0 0 8px 15px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -3px;
+      content: "";
+      width: 30px;
+      height: 1px;
+      opacity: 0.3;
+      background: #ffffff;
+    }
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__text-wrapper {
+  @media (max-width: @max-mobile) {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 158px;
+    border-radius: 0px 0px 9px 9px;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__title-wrapper {
+  @media (max-width: @max-mobile) {
+    margin: 27px 0 7.5px 0;
+    position: relative;
+    width: max-content;
+    min-height: 21px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__status {
+  @media (max-width: @max-mobile) {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__status--online {
+  @media (max-width: @max-mobile) {
+    background: #81e31e;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__status--offline {
+  @media (max-width: @max-mobile) {
+    background: #f97676;;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__text-title {
+  @media (max-width: @max-mobile) {
+    .font (21px;22px;bold;#1d2e5b;);
+    margin: 0;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__text-tags {
+  @media (max-width: @max-mobile) {
+    .font (16px;18px;normal;#444444;);
+    text-align: center;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.travelers-card__text-icons {
+  @media (max-width: @max-mobile) {
+    display: flex;
+    justify-content: center;
+    svg {
+      margin: 0 7.5px 0 7.5px;
+    }
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}

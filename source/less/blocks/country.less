@@ -1,0 +1,144 @@
+.country {
+  @media (max-width: @max-mobile) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.country__img-wrapper {
+  @media (max-width: @max-mobile) {
+    width: 100%;
+    min-height: 110px;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.country__img {
+  @media (max-width: @max-mobile) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.country__text-wrapper {
+  @media (max-width: @max-mobile) {
+    display: grid;
+    grid-template-areas: "title counter" "desc desc";
+
+    background: #ffffff;
+    border-radius: 10px;
+    min-height: 89px;
+    width: 100%;
+    position: relative;
+    margin-top: -28px;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.country__text-title {
+  @media (max-width: @max-mobile) {
+    margin: 0 0 0 24px;
+    grid-area: title;
+    align-self: end;
+    .font (21px;21px;bold;#000000);
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.country__text-counter {
+  @media (max-width: @max-mobile) {
+    position: relative;
+    grid-area: counter;
+    align-self: end;
+    margin-bottom: -3px;
+    .font (16px;20px;500;#161c35;);
+    opacity: 0.3;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 3px;
+      left: -20px;
+      width: 10.5px;
+      height: 11.62px;
+      background: url("../../img/icons/counter.svg") no-repeat 50% 50%;
+    }
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.country__text-description {
+  @media (max-width: @max-mobile) {
+    margin: 0 0 0 24px;
+    grid-area: desc;
+    .font (16px;18px;500;#444444;);
+    opacity: 0.3;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.country__flag {
+  @media (max-width: @max-mobile) {
+    position: absolute;
+    top:-12px;
+    left: 25px;
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
