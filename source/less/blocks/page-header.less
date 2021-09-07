@@ -1,10 +1,16 @@
 .page-header__wrapper {
+  display: grid;
+
   @media (max-width: @max-mobile) {
-    display: grid;
+
   }
 
   @media (min-width: @min-tablet) {
-
+    grid-template-areas: ". other-nav" "title title" "features features" "about about" ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    width: @tablet-wrapper;
+    margin: 0 auto;
   }
 
   @media (min-width: @min-desktop) {
@@ -20,7 +26,13 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    background-color: #182044;
+    background-image: url("../../img/traveller-illustration-tablet.svg"), url("../../img/globe-back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 372px, 100%;
+    background-position: 70% 359px, 60% 335px;
+    border-radius: 0px 0px 60px 60px;
+    z-index: 10;
   }
 
   @media (min-width: @min-desktop) {
@@ -34,7 +46,81 @@
   }
 
   @media (min-width: @min-tablet) {
+    position: absolute;
+    grid-area: main-nav;
+  }
 
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.page-header__title-block {
+  @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+    grid-area: title;
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.page-header__other-nav {
+  @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+    grid-area: other-nav;
+    justify-self: end;
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.page-header__feedback {
+  @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+    position: absolute;
+    margin: 458px 0 25px 0;
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.page-header__features {
+  @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+    grid-area: features;
+    margin-top: -460px;
+  }
+
+  @media (min-width: @min-desktop) {
+
+  }
+}
+
+.page-header__about {
+  @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+    grid-area: about;
   }
 
   @media (min-width: @min-desktop) {

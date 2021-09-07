@@ -9,7 +9,11 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    background-color: #192144;
+    background-image: url("../../img/rogovaya-back-tab.png"), url("../../img/traveller-back-rectangle.svg"), url("../../img/smolov-back-tab.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 84% 130px, 40px 130px, 40px 463px;
+    border-radius: 0px 0px 60px 60px;
   }
 
   @media (min-width: @min-desktop) {
@@ -25,7 +29,8 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    width: @tablet-container;
+    margin: 0 auto;
   }
 
   @media (min-width: @min-desktop) {
@@ -54,7 +59,9 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    .font (28px;34px;300;#ffffff);
+    margin: 55px 0 29px 0;
+    width: 427px;
   }
 
   @media (min-width: @min-desktop) {
@@ -69,7 +76,9 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    .font (21px;24px;bold;#ffffff);
+    margin: 10px 0 59px 0;
+    width: 260px;
   }
 
   @media (min-width: @min-desktop) {
@@ -79,6 +88,14 @@
 
 .travelers__list {
   .offbulit;
+
+  @media (min-width: @min-tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
 }
 
 .travelers__item {
@@ -101,7 +118,7 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    margin: 21px 0 87px 0;
   }
 
   @media (min-width: @min-desktop) {

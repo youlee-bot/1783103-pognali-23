@@ -28,7 +28,22 @@
   }
 
   @media (min-width: @min-tablet) {
+    position: relative;
+    padding: 29px 0 27px 32.81px;
+    display: block;
+    background: #ffd74b;
+    border-radius: 20px;
+    .font (24px;24px;bold;#1d2e5b;);
 
+    &::before {
+      position: absolute;
+      top: 35px;
+      right: 23px;
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: url("../../img/icons/Polygon.svg") no-repeat 50% 50%;
+    }
   }
 
   @media (min-width: @min-desktop) {

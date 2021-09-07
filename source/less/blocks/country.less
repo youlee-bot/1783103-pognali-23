@@ -1,10 +1,12 @@
 .country {
+  margin-bottom: 11px;
+
   @media (max-width: @max-mobile) {
-    margin-bottom: 11px;
+
   }
 
   @media (min-width: @min-tablet) {
-
+    display: flex;
   }
 
   @media (min-width: @min-desktop) {
@@ -15,11 +17,13 @@
 .country__img-wrapper {
   @media (max-width: @max-mobile) {
     width: 100%;
-    min-height: 110px;
+    height: 110px;
   }
 
   @media (min-width: @min-tablet) {
-
+    width: 186px;
+    height: 140px;
+    order: 2;
   }
 
   @media (min-width: @min-desktop) {
@@ -34,7 +38,10 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    width: 186px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
   }
 
   @media (min-width: @min-desktop) {
@@ -46,7 +53,6 @@
   @media (max-width: @max-mobile) {
     display: grid;
     grid-template-areas: "title counter" "desc desc";
-
     background: #ffffff;
     border-radius: 10px;
     min-height: 89px;
@@ -56,7 +62,13 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    display: grid;
+    grid-template-areas: "title" "desc" "counter";
+    background: #ffffff;
+    border-radius: 20px 0 0 20px;
+    min-height: 140px;
+    width: 432px;
+    position: relative;
   }
 
   @media (min-width: @min-desktop) {
@@ -73,7 +85,10 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    grid-area: title;
+    .font (24px;24px;bold;#000000);
+    margin: 5px 0 0 30px;
+    align-self: end;
   }
 
   @media (min-width: @min-desktop) {
@@ -82,8 +97,18 @@
 }
 
 .country__text-counter {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10.5px;
+    height: 11.62px;
+    background: url("../../img/icons/counter.svg") no-repeat 50% 50%;
+  }
+
   @media (max-width: @max-mobile) {
-    position: relative;
+
     grid-area: counter;
     align-self: end;
     margin-bottom: -3px;
@@ -91,18 +116,25 @@
     opacity: 0.3;
 
     &::before {
-      position: absolute;
-      content: "";
       top: 3px;
       left: -20px;
-      width: 10.5px;
-      height: 11.62px;
-      background: url("../../img/icons/counter.svg") no-repeat 50% 50%;
     }
   }
 
   @media (min-width: @min-tablet) {
+    grid-area: counter;
+    align-self: start;
+    .font (20px;20px;500;#161c35;);
+    margin: 0 0 0 55px;
+    opacity: 0.3;
 
+    &::before {
+      width: 18px;
+      height: 20px;
+      background-size: 100%;
+      top: -1;
+      left: -25px;
+    }
   }
 
   @media (min-width: @min-desktop) {
@@ -119,7 +151,11 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    grid-area: desc;
+    .font (20px;20px;500;#444444;);
+    opacity: 0.3;
+    align-self: start;
+    margin: 5px 0 0 30px;
   }
 
   @media (min-width: @min-desktop) {
@@ -135,7 +171,9 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    position: absolute;
+    top: 12px;
+    right: -25px;
   }
 
   @media (min-width: @min-desktop) {

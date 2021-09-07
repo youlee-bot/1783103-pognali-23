@@ -6,17 +6,21 @@ flex-direction: column;
 }
 
 .map__background-wrapper {
+  width: 100%;
+  background-color: #ffd74b;
+
   @media (max-width: @max-mobile) {
     padding-top: 65px;
-    width: 100%;
-    background-color: #ffd74b;
     border-radius: 0px 0px 30px 30px;
     padding-bottom: 44px;
     z-index: 1;
   }
 
   @media (min-width: @min-tablet) {
-
+    padding-top: 90px;
+    border-radius: 0px 0px 60px 60px;
+    padding-bottom: 84px;
+    z-index: 1;
   }
 
   @media (min-width: @min-desktop) {
@@ -31,7 +35,8 @@ flex-direction: column;
   }
 
   @media (min-width: @min-tablet) {
-
+    width: @tablet-container;
+    margin: 0 auto;
   }
 
   @media (min-width: @min-desktop) {
@@ -63,7 +68,11 @@ flex-direction: column;
   }
 
   @media (min-width: @min-tablet) {
-
+    display: block;
+    .font (28px;28px;bold;#1d2e5b;);
+    text-transform: uppercase;
+    padding-left: 61px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: @min-desktop) {
@@ -72,13 +81,7 @@ flex-direction: column;
 }
 
 .map__button {
-  @media (max-width: @max-mobile) {
-    border: 3px solid #192144;
-  }
-
-  @media (min-width: @min-tablet) {
-
-  }
+  border: 3px solid #192144;
 
   @media (min-width: @min-desktop) {
 
@@ -93,7 +96,9 @@ flex-direction: column;
   }
 
   @media (min-width: @min-tablet) {
-
+    width: 100%;
+    margin-top: -50px;
+    z-index: -4;
   }
 
   @media (min-width: @min-desktop) {

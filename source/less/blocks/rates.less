@@ -1,14 +1,18 @@
 .rates {
-  background-color: #e6e8f1;
-  .font (16px;16px;300;#444444);
+
 
   @media (max-width: @max-mobile) {
+    background-color: #e6e8f1;
+    .font (16px;16px;300;#444444);
     border-radius: 0px 0px 30px 30px;
     padding-top: 80px;
   }
 
   @media (min-width: @min-tablet) {
-
+    .font (28px;28px;300;#444444);
+    border-radius: 0px 0px 60px 60px;
+    background: #edeff6 url("../../img/rates-back.svg") no-repeat 90% 45px;
+    background-size:  198px 100%;
   }
 
   @media (min-width: @min-desktop) {
@@ -17,15 +21,18 @@
 }
 
 .rates__wrapper {
+  display: grid;
+
   @media (max-width: @max-mobile) {
     width: @mobile-width;
     margin: 0 auto;
-    display: grid;
     grid-template-areas: "title img" "content content" "link link";
   }
 
   @media (min-width: @min-tablet) {
-
+    width: @tablet-wrapper;
+    margin: 0 auto;
+    grid-template-areas: "title title" "content content" "link img";
   }
 
   @media (min-width: @min-desktop) {
@@ -35,6 +42,8 @@
 }
 
 .rates__title {
+  grid-area: title;
+
   @media (max-width: @max-mobile) {
     grid-area: title;
     width: 100px;
@@ -45,7 +54,8 @@
   }
 
   @media (min-width: @min-tablet) {
-
+    margin: 0 0 73px 0;
+    text-align: center;
   }
 
   @media (min-width: @min-desktop) {
@@ -55,14 +65,18 @@
 }
 
 .rates__img-container {
+  grid-area: img;
+
   @media (max-width: @max-mobile) {
-    grid-area: img;
     width: 100px;
     height: 100px;
   }
 
   @media (min-width: @min-tablet) {
-
+    width: 130px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
   }
 
   @media (min-width: @min-desktop) {
@@ -90,20 +104,22 @@
 }
 
 .rates__item {
+  display: grid;
+
   @media (max-width: @max-mobile) {
-    display: grid;
     grid-template-areas: "services counter " "price counter";
     grid-template-columns: 1fr min-content;
     margin-left: 11px;
 
     &:nth-child(1) .rates__item__services{
-
       border-top: 1px solid #e1e3e9;
     }
   }
 
   @media (min-width: @min-tablet) {
-
+    grid-template-areas: "counter services price";
+    grid-template-columns: min-content 1fr 230px;
+    min-height: 69px;
   }
 
   @media (min-width: @min-desktop) {
@@ -125,11 +141,11 @@
     @media (max-width: @max-mobile) {
       width: 34px;
       height: 34px;
-      vertical-align: m;
     }
 
     @media (min-width: @min-tablet) {
-
+      width: 68px;
+      height: 68px;
     }
 
     @media (min-width: @min-desktop) {
@@ -150,14 +166,16 @@
   }
 }
 
-.rates__item__services {
+.rates__item-services {
+  grid-area: services;
+
   @media (max-width: @max-mobile) {
-    grid-area: services;
     padding: 13px 0 6px 0;
   }
 
   @media (min-width: @min-tablet) {
-
+    padding: 20px 0 22px 18px;
+    border-bottom: 1px solid #e1e3e9;
   }
 
   @media (min-width: @min-desktop) {
@@ -165,15 +183,17 @@
   }
 }
 
-.rates__item__price {
+.rates__item-price {
+  grid-area: price;
+
   @media (max-width: @max-mobile) {
-    grid-area: price;
     padding: 0 0 18px 0;
     border-bottom: 1px solid #e1e3e9;
   }
 
   @media (min-width: @min-tablet) {
-
+    justify-self: center;
+    align-self: center;
   }
 
   @media (min-width: @min-desktop) {
@@ -182,17 +202,32 @@
 }
 
 .rates__link {
+  grid-area: link;
+
   @media (max-width: @max-mobile) {
     font-weight: bold;
     color: #132576;
     text-decoration: none;
-    grid-area: link;
     justify-self: center;
     margin: 31px 0 8px 11px;
   }
 
   @media (min-width: @min-tablet) {
+    .font (20px;20px;bold;#132576;);
+    align-self: center;
+    margin-left: 90px;
+    position: relative;
 
+    &::before {
+      position: absolute;
+      content: "";
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: #e2e5f2 url("../../img/icons/icon_businessman.svg") no-repeat 50% 50%;
+      left: -90px;
+      top: -25px;
+    }
   }
 
   @media (min-width: @min-desktop) {
