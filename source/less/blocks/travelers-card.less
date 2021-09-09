@@ -2,6 +2,12 @@
     display: flex;
     flex-direction: column;
     width: 270px;
+
+    @media (min-width: @min-desktop) {
+      &:nth-child(odd) {
+        margin-right: 60px;
+      }
+    }
   }
 
 .travelers-card__img-wrapper {

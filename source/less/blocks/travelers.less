@@ -17,7 +17,11 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    background-color: #192144;
+    background-image: url("../../img/rogovaya-back-tab.png"), url("../../img/traveller-back-rectangle.svg"), url("../../img/smolov-back-tab.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 190px 487px, 60px 171px, 547px 235px;
+    border-radius: 0px 0px 60px 60px;
   }
 }
 
@@ -34,8 +38,27 @@
   }
 
   @media (min-width: @min-desktop) {
+    display: grid;
+    grid-template-areas: "content list" "button list";
+    padding: 0 60px 0 129px;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.travelers__header {
+  @media (max-width: @max-mobile) {
 
   }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+    grid-area: content;
+  }
+
 }
 
 .travelers__title {
@@ -65,7 +88,7 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    .font (28px;33px;300;#ffffff);
   }
 }
 
@@ -82,7 +105,7 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    .font (21px;23px;bold;#ffffff);
   }
 }
 
@@ -95,6 +118,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: @min-desktop) {
+    grid-area: list;
+    justify-self: end;
   }
 }
 
@@ -122,6 +150,8 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    grid-area: button;
+    max-width: 280px;
+    margin-bottom: 0;
   }
 }

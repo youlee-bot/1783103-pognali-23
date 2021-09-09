@@ -13,7 +13,12 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    span {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
   }
 }
 
@@ -55,6 +60,18 @@
   }
 
   @media (min-width: @min-desktop) {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    &--phone {
+      background: #ff8d30 url("../../img/icons/icon_call.svg") no-repeat 50% 50%;
+    }
+    &--mail {
+      background: #ffbd30 url("../../img/icons/icon_mail.svg") no-repeat 50% 50%;
+    }
+
 
   }
 }
@@ -71,6 +88,20 @@
   }
 
   @media (min-width: @min-desktop) {
+    .font (20px;20px;bold;#192144;);
+  }
+}
 
+.other-nav__item-list {
+  @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+    display: flex;
   }
 }

@@ -9,7 +9,11 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    span {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -28,9 +32,12 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    &:nth-child(1) {
+      order: 3;
+    }
   }
 }
+
 
 .main-icons__icon {
   border-radius: 50%;
@@ -49,21 +56,43 @@
   }
 
   @media (min-width: @min-tablet) {
+    width: 45px;
+    height: 45px;
+    margin-right: 16px;
 
+    &--phone {
+      background: #121936 url("../../img/icons/phone.svg") no-repeat 50% 50%;
+    }
+    &--mail {
+      background: #121936 url("../../img/icons/mail.svg") no-repeat 50% 50%;
+    }
   }
 
   @media (min-width: @min-desktop) {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0;
 
+    &--phone {
+      background: #ff8d30 url("../../img/icons/icon_call.svg") no-repeat 50% 50%;
+    }
+    &--mail {
+      background: #ffbd30 url("../../img/icons/icon_mail.svg") no-repeat 50% 50%;
+    }
   }
 }
 
 .main-icons__button {
   @media (max-width: @max-mobile) {
     width: 100%;
+    display: block;
+    margin: 51px 0;
   }
 
   @media (min-width: @min-tablet) {
-
+    padding: 16px 28px 14px 29px;
+    .font (20px;20px;bold);
   }
 
   @media (min-width: @min-desktop) {

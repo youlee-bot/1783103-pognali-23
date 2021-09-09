@@ -12,26 +12,28 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    min-height: 650px;
   }
 }
 
 .title-block__title {
+  text-align: center;
+  margin:0;
+
   @media (max-width: @max-mobile) {
     .font (36px;40px;bold;#ffffff);
-    text-align: center;
-    margin:0;
+
     padding-top: 92px;
   }
 
   @media (min-width: @min-tablet) {
     .font (60px;70px;bold;#ffffff);
-    text-align: center;
-    margin:0;
     padding-top: 62px;
   }
 
   @media (min-width: @min-desktop) {
-
+    .font (60px;70px;bold;#ffffff);
+    padding: 110px 0 0 127px;
+    text-align: left;
   }
 }

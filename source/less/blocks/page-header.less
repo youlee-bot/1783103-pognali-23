@@ -14,7 +14,12 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    grid-template-areas: "main-nav main-nav" "title title" "other-nav other-nav" "about about" ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    position: relative;
+    width: auto;
+    margin: 0 auto;
   }
 }
 
@@ -36,7 +41,15 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    width: @desktop-container;
+    margin: 0 auto;
+    background-color: #182044;
+    background-image: url("../../img/traveller-illustration-desktop.svg"), url("../../img/globe-back-desktop.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 431px, 100%;
+    background-position: 61% 110px, 60% 0;
+    border-radius: 0px 0px 60px 60px;
+    z-index: 10;
   }
 }
 
@@ -48,10 +61,17 @@
   @media (min-width: @min-tablet) {
     position: absolute;
     grid-area: main-nav;
+    width: 100%;
   }
 
   @media (min-width: @min-desktop) {
-
+    position: static;
+    width: auto;
+    grid-area: main-nav;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    width: @desktop-wrapper;
+    margin: 29px auto 0 auto;
   }
 }
 
@@ -80,7 +100,11 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    background-color: #ffffff;
+    padding: 20px 60px;
   }
 }
 
@@ -95,7 +119,8 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    right: 0;
+    margin: 221px 83px 0 0;
   }
 }
 
@@ -110,7 +135,13 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    margin: 0;
+    position: absolute;
+    top: 500px;
+    width: @desktop-wrapper;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 50%;
   }
 }
 

@@ -11,12 +11,12 @@
     background-image: url("../../img/flags-back.png"), url("../../img/destinations-rectangle.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
-    background-position: 90% 123px, 40px 458px;
+    background-position: 90% 123px, 61px 135px;
     border-radius: 0px 0px 60px 60px;
   }
 
   @media (min-width: @min-desktop) {
-
+    width: @desktop-container;
   }
 }
 
@@ -34,7 +34,23 @@
   }
 
   @media (min-width: @min-desktop) {
+    display: grid;
+    grid-template-areas: "imgs content" "imgs button";
+  }
 
+}
+
+.destinations__header {
+  @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+    grid-area: content;
   }
 
 }
@@ -84,7 +100,20 @@
   }
 
   @media (min-width: @min-desktop) {
+    grid-area: imgs;
+    position: relative;
 
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 81px;
+      background: url("../../img/fade.png") no-repeat 0 0;
+      background-size: 100% 81px;
+      bottom: 10px;
+      left: 0;
+      z-index: 20;
+    }
   }
 }
 
@@ -98,6 +127,7 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    margin: 0;
+    grid-area: button;
   }
 }

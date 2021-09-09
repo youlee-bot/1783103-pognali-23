@@ -4,7 +4,7 @@
   }
 
   @media (min-width: @min-tablet) {
-    width: 100%;
+
   }
 
   @media (min-width: @min-desktop) {
@@ -42,13 +42,15 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    background-color: inherit;
+      .main-nav__toggle {
+        display: none;
+      }
   }
 }
 
 .main-nav__list {
   .offbulit;
-  display: flex;
   flex-direction: column;
 
   @media (max-width: @max-mobile) {
@@ -66,7 +68,10 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    background-color: inherit;
+    margin: 0;
+    .font (20px;20px;500;#ffffff);
+    text-transform: uppercase;
   }
 }
 
@@ -80,7 +85,8 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    display: grid;
+    grid-template-columns: 1fr max-content 0px;
   }
 }
 
@@ -100,13 +106,21 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    svg {
-
-    }
   }
 
   @media (min-width: @min-desktop) {
+    margin-right: 145px;
+    position: relative;
 
+    &::before {
+      position: absolute;
+      content: "";
+      right: -115px;
+      top: 26px;
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+    }
   }
 
 }
@@ -161,7 +175,7 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    display: none;
   }
 
 }
@@ -190,27 +204,29 @@
   }
 
   @media (min-width: @min-desktop) {
-
-  }
-}
-
-.main-icons__button {
-  @media (max-width: @max-mobile) {
-    display: block;
-    margin: 51px 0;
-  }
-
-  @media (min-width: @min-tablet) {
-
-  }
-
-  @media (min-width: @min-desktop) {
-
+    width: 100%;
+    margin: 0;
+    align-self: center;
   }
 }
 
 .main-nav__item-list {
   @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+    display: flex;
+  }
+}
+
+.main-nav__icons {
+  @media (max-width: @max-mobile) {
+
   }
 
   @media (min-width: @min-tablet) {
@@ -220,4 +236,20 @@
   @media (min-width: @min-desktop) {
 
   }
+
+}
+
+.main-nav__social {
+  @media (max-width: @max-mobile) {
+    display: flex;
+  }
+
+  @media (min-width: @min-tablet) {
+    display: flex;
+  }
+
+  @media (min-width: @min-desktop) {
+    display: none;
+  }
+
 }

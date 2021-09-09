@@ -16,7 +16,8 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    background: #edeff6 url("../../img/rates-back.svg") no-repeat 82% 250px;
+    background-size:  436px 300px;
   }
 }
 
@@ -36,7 +37,10 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    width: @desktop-wrapper;
+    padding: 0 130px;
+    grid-template-areas: "title title title"  "content content img" "link . .";
+    grid-template-columns: 718px 300px max-content;
   }
 
 }
@@ -231,6 +235,6 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    margin-top: 69px;
   }
 }

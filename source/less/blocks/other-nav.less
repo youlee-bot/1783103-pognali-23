@@ -8,16 +8,46 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    z-index: 11;
   }
 }
 
 .other-nav__list {
-  .offbulit
+  .offbulit;
+
+  @media (max-width: @max-mobile) {
+
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 }
 
 .other-nav__item-list {
   .offbulit
+}
+
+.other-nav__header {
+  @media (max-width: @max-mobile) {
+    display: none;
+  }
+
+  @media (min-width: @min-tablet) {
+    display: none;
+  }
+
+  @media (min-width: @min-desktop) {
+    display: block;
+  }
+
 }
 
 .other-nav__links {
@@ -30,7 +60,7 @@
   }
 
   @media (min-width: @min-desktop) {
-
+    display: flex;
   }
 }
 
@@ -50,4 +80,39 @@
   }
 }
 
+.other-nav__logo {
+  @media (max-width: @max-mobile) {
 
+  }
+
+  @media (min-width: @min-tablet) {
+
+  }
+
+  @media (min-width: @min-desktop) {
+
+    background: url("../../img/logo-background.svg") no-repeat 0 50%;
+    width: 165px;
+    height: 52px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 145px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: -115px;
+      top: 26px;
+      width: 60px;
+      height: 2px;
+      background-color: #192144;
+    }
+
+    svg > g > path {
+      fill: black;
+    }
+  }
+
+}
